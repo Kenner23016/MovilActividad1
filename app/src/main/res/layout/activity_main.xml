@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_app">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/azul_login"
+        app:title="Login"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsuarioLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="@color/color_texto"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="95dp"
+        android:layout_marginStart="75dp" />
+
+    <EditText
+        android:id="@+id/edtUsuarioLogin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese de usuario"
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="@id/tvUsuarioLogin"
+        app:layout_constraintStart_toEndOf="@id/tvUsuarioLogin"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:id="@+id/tvPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passsword"
+        android:textColor="@color/color_texto"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvUsuarioLogin"
+        app:layout_constraintStart_toStartOf="@id/tvUsuarioLogin"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/edtPasswordLogin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese de password"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="@id/tvPasswordLogin"
+        app:layout_constraintStart_toStartOf="@id/edtUsuarioLogin" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/edtPasswordLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="105dp" />
+
+    <Button
+        android:id="@+id/btnSalirLogin"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/btnIngresar"
+        app:layout_constraintStart_toEndOf="@id/btnIngresar"
+        android:layout_marginStart="35dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

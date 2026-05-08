@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="azul_login">#4285F4</color>
+    <color name="fondo_app">#FFF7FF</color>
+    <color name="color_texto">#222222</color>
+
+    <color name="blue">#337dff</color>
+    <color name="verde_neon">#FF00FF66</color>
+    <color name="grey">#e7e8eb</color>
+    <color name="grisclaro">#E0E0E0</color>
+    <color name="red">#E61212</color>
+    <color name="green">#4CF013</color>
+    <color name="magenta">#FFFF00FF</color>
+</resources>
